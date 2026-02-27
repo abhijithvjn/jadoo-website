@@ -105,40 +105,40 @@ export const HOME_PAGE_DATA = {
             id: 1,
             title: 'Choose Destination',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.',
-            icon: '/icons/selection.png',
+            icon: '/images/home/selection.png',
             iconBgColor: '#F1A501', // Yellow
           },
           {
             id: 2,
             title: 'Make Payment',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.',
-            icon: '/icons/payment.png',
+            icon: '/images/home/payment.png',
             iconBgColor: '#DF6951', // Red/Orange
           },
           {
             id: 3,
             title: 'Reach Airport on Selected Date',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.',
-            icon: '/icons/taxi.png',
+            icon: '/images/home/taxi.png',
             iconBgColor: '#006380', // Blue
           },
         ],
 
         // Right Side "Floating Card" Content
         bookingCard: {
-          mainImage: '/images/trip-to-greece.jpg',
+          mainImage: '/images/home/trip-to-greece.png',
           title: 'Trip To Greece',
           dateRange: '14-29 June',
           author: 'by Robbin joseph',
-          footprintIcon: '/icons/leaf.png',
-          mapIcon: '/icons/map.png',
-          sendIcon: '/icons/send-plane.png',
+          footprintIcon: '/images/home/leaf.png',
+          mapIcon: '/images/home/book.png',
+          sendIcon: '/images/home/send.png',
           stats: '24 people going',
-          favoriteIcon: '/icons/heart-outline.png',
+          favoriteIcon: '/images/home/heart.png',
 
           // The smaller "Ongoing" overlay card
           ongoingOverlay: {
-            destinationImage: '/images/rome-thumb.jpg',
+            destinationImage: '/images/home/rome-thumb.png',
             status: 'Ongoing',
             title: 'Trip to rome',
             completionPercentage: 40,
