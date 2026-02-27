@@ -64,31 +64,31 @@ export const HOME_PAGE_DATA = {
       data: {
         tag: 'Top Selling',
         title: 'Top Destinations',
-        decoration: '/images/spiral_line.png', // The loopy line on the right side
+        decoration: '/images/home/decore_destination.png', // The loopy line on the right side
         destinations: [
           {
             id: 1,
             location: 'Rome, Italy',
             price: '$5,42k',
             duration: '10 Days Trip',
-            image: '/images/rome.png',
-            icon: '/images/navigation_arrow.png', // The small black sender icon
+            image: '/images/home/rome.png',
+            icon: '/images/home/navigation_destination.png', // The small black sender icon
           },
           {
             id: 2,
             location: 'London, UK',
             price: '$4.2k',
             duration: '12 Days Trip',
-            image: '/images/london.png',
-            icon: '/images/navigation_arrow.png',
+            image: '/images/home/london.png',
+            icon: '/images/home/navigation_destination.png',
           },
           {
             id: 3,
             location: 'Full Europe',
             price: '$15k',
             duration: '28 Days Trip',
-            image: '/images/europe.png',
-            icon: '/images/navigation_arrow.png',
+            image: '/images/home/europe.png',
+            icon: '/images/home/navigation_destination.png',
           },
         ],
       },

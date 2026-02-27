@@ -1,11 +1,11 @@
 import { Widget } from '@/types/types';
 import HomeHeroSection from '@/widgets/homepage/HomeHeroSection';
 import ServicesGrid from '@/widgets/homepage/ServicesGrid';
-import DestinationsGrid from '@/widgets/homepage/DestinationsGrid';
 import BookingSteps from '@/widgets/homepage/BookingSteps';
 import TestimonialsSlider from '@/widgets/homepage/TestimonialsSlider';
 import PartnerLogos from '@/widgets/homepage/PartnerLogos';
 import NewsletterSubscribe from '@/widgets/homepage/NewsletterSubscribe';
+import DestinationsGrid from '@/widgets/homepage/DestinationsGrid';
 
 const WIDGET_COMPONENTS: Record<Widget['widget_type'], React.ComponentType<{ data: any }>> = {
   HeroBanner: HomeHeroSection,
@@ -35,12 +35,7 @@ export default function WidgetRenderer({ widgets }: WidgetRendererProps) {
           return null;
         }
 
-        return (
-          <Component 
-            key={`${widget.widget_type}-${index}`} 
-            data={widget.data} 
-          />
-        );
+        return <Component key={`${widget.widget_type}-${index}`} data={widget.data} />;
       })}
     </>
   );
