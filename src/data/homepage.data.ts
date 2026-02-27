@@ -172,7 +172,7 @@ export const HOME_PAGE_DATA = {
         testimonials: [
           {
             id: 1,
-            userImage: '/images/mike-taylor.png',
+            userImage: '/images/home/profile.png',
             quote:
               '“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”',
             userName: 'Mike Taylor',
@@ -181,7 +181,7 @@ export const HOME_PAGE_DATA = {
           },
           {
             id: 2,
-            userImage: '/images/chris-thomas.png',
+            userImage: '/images/home/profile.png',
             quote:
               "“The booking process was incredibly seamless. I've never had such a stress-free experience planning a full Europe tour. Highly recommended!”",
             userName: 'Chris Thomas',
@@ -191,7 +191,7 @@ export const HOME_PAGE_DATA = {
           },
           {
             id: 3,
-            userImage: '/images/sarah-jenkins.png',
+            userImage: '/images/home/profile.png',
             quote:
               '“Finding the right destinations used to take me weeks. With this platform, I had my entire itinerary for Greece settled in under ten minutes.”',
             userName: 'Sarah Jenkins',
