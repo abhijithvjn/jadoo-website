@@ -7,7 +7,7 @@ export const DesktopHero = ({ data }: { data: HeroBannerData }) => (
   <div className="hidden md:grid min-h-[600px] md:pt-12 lg:pt-10" style={{ gridTemplateColumns: '55% 45%' }}>
     {/* ── LEFT COLUMN ── */}
     <div className="flex flex-col items-start justify-center pt-[160px] pb-16">
-      <SubCaption className="font-semibold text-primary uppercase tracking-[0.22em] whitespace-nowrap">
+      <SubCaption className="font-semibold text-primary uppercase whitespace-nowrap">
         {data.tag}
       </SubCaption>
 
