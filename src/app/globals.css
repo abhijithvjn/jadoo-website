@@ -1,26 +1,96 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
+/* ================= ROOT DESIGN TOKENS ================= */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Jadoo Brand Colors */
+  --jadoo-primary: #df6951;
+  --jadoo-accent: #14183e;
+  --jadoo-muted: #5e6282;
+  --jadoo-secondary: #f1a501;
+
+  /* ========== TYPOGRAPHY SCALE — MOBILE ========== */
+  --text-heading-size: 40px;
+  --text-sub-heading-size: 32px;
+  --text-main-caption-size: 18px;
+  --text-caption-size: 14px;
+  --text-sub-caption-size: 12px;
+  --text-paragraph-size: 14px;
+  --text-sub-paragraph-size: 12px;
+
+  /* Line Heights */
+  --leading-heading: 1;
+  --leading-tight: 1.3;
+  --leading-normal: 1.6;
 }
 
+/* ================= DESKTOP (lg ≥ 1024px) ================= */
+@media (min-width: 1024px) {
+  :root {
+    --text-heading-size: 64px;
+    --text-sub-heading-size: 42px;
+    --text-main-caption-size: 28px;
+    --text-caption-size: 18px;
+    --text-sub-caption-size: 16px;
+    --text-paragraph-size: 16px;
+    --text-sub-paragraph-size: 14px;
+  }
+}
+
+/* ================= LARGE DESKTOP (xl ≥ 1280px) ================= */
+@media (min-width: 1280px) {
+  :root {
+    --text-heading-size: 84px;
+    --text-sub-heading-size: 50px;
+    --text-main-caption-size: 33px;
+    --text-caption-size: 20px;
+    --text-sub-caption-size: 18px;
+    --text-paragraph-size: 18px;
+    --text-sub-paragraph-size: 16px;
+  }
+}
+
+/* ================= TAILWIND THEME TOKENS ================= */
 @theme inline {
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--jadoo-primary);
+  --color-accent: var(--jadoo-accent);
+  --color-muted: var(--jadoo-muted);
+  --color-secondary: var(--jadoo-secondary);
+
+  /*
+   * Point directly at the variables next/font injects onto <html>.
+   * Use --font-volkhov/--font-poppins/--font-nav as the Tailwind utility names
+   * so they never collide with the injected --font-heading/--font-body vars.
+   */
+  --font-volkhov: var(--font-heading);
+  --font-poppins: var(--font-body);
+  --font-nav: var(--font-google-sans);
+
+  /* Text sizes */
+  --text-heading: var(--text-heading-size);
+  --text-sub-heading: var(--text-sub-heading-size);
+  --text-main-caption: var(--text-main-caption-size);
+  --text-caption: var(--text-caption-size);
+  --text-sub-caption: var(--text-sub-caption-size);
+  --text-paragraph: var(--text-paragraph-size);
+  --text-sub-paragraph: var(--text-sub-paragraph-size);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ================= BASE / GLOBAL STYLES ================= */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body); /* use the next/font var directly */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
