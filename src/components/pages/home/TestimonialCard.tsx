@@ -22,7 +22,7 @@ const TestimonialCard = ({ quote, author, location, role, image, isTop }: Testim
   `}
   >
     {isTop && (
-      <div className="absolute -top-8 -left-8 w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-md">
+      <div className="absolute -top-8 -left-2 md:-left-8 w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-md">
         <Image src={image} alt={author} fill className="object-cover" />
       </div>
     )}
