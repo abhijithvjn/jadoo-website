@@ -24,36 +24,36 @@ export const HOME_PAGE_DATA = {
         category_tag: 'CATEGORY',
         title: 'We Offer Best Services',
         decorations: {
-          topRightGrid: '/images/plus_grid.png',
-          redAccentShape: '/images/red_blob.png',
+          topRightGrid: '/images/home/services-grid-bg.png',
+          redAccentShape: '/images/home/bottom-red.png',
         },
         services: [
           {
             id: 1,
             title: 'Calculated Weather',
             description: 'Built Wicket longer admire do barton vanity itself do in it.',
-            icon: '/images/weather.png',
+            icon: '/images/home/weather.png',
             isFeatured: false,
           },
           {
             id: 2,
             title: 'Best Flights',
             description: 'Engrossed listening. Park gate sell they west hard for the.',
-            icon: '/images/plane.png',
+            icon: '/images/home/aeroplane.png',
             isFeatured: true, // Triggers the white card + shadow + red accent
           },
           {
             id: 3,
             title: 'Local Events',
             description: 'Barton vanity itself do in it. Preferd to men it engrossed listening.',
-            icon: '/images/mic.png',
+            icon: '/images/home/event.png',
             isFeatured: false,
           },
           {
             id: 4,
             title: 'Customization',
             description: 'We deliver outsourced aviation services for military customers',
-            icon: '/images/gear.png',
+            icon: '/images/home/customization.png',
             isFeatured: false,
           },
         ],
