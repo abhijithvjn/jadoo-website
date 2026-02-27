@@ -19,7 +19,6 @@ const TestimonialsClient = ({ data }: { data: TestimonialsSliderData }) => {
     setActiveIndex((prev) => (prev - 1 + data.testimonials.length) % data.testimonials.length);
   };
 
-  // Card Stacking Variants
   const cardVariants = {
     top: {
       y: 0,
@@ -47,7 +46,6 @@ const TestimonialsClient = ({ data }: { data: TestimonialsSliderData }) => {
 
   return (
     <Container className="grid grid-cols-1 md:grid-cols-[0.8fr_1fr] gap-20">
-      {/* Left Side: Text and Pagination */}
       <div className="flex flex-col gap-8">
         <div>
           <SubCaption className="text-muted font-semibold uppercase tracking-widest">{data.tag}</SubCaption>
@@ -77,7 +75,6 @@ const TestimonialsClient = ({ data }: { data: TestimonialsSliderData }) => {
         </div>
       </div>
 
-      {/* Right Side: Card Stack and Vertical Nav */}
       <div className="relative flex items-center lg:pr-12">
         <div className="relative w-full h-[450px]">
           <AnimatePresence initial={false}>
@@ -85,7 +82,6 @@ const TestimonialsClient = ({ data }: { data: TestimonialsSliderData }) => {
               const isTop = index === activeIndex;
               const isStacked = index === (activeIndex + 1) % data.testimonials.length;
 
-              // Only render the top card and the one behind it
               if (!isTop && !isStacked) return null;
 
               return (
@@ -111,7 +107,6 @@ const TestimonialsClient = ({ data }: { data: TestimonialsSliderData }) => {
           </AnimatePresence>
         </div>
 
-        {/* Vertical Navigation Arrows */}
         <div className="flex flex-col gap-10 ml-24 text-muted-foreground relative z-30">
           <button onClick={prevSlide} className="hover:text-accent transition-colors cursor-pointer">
             <ChevronUp size={24} strokeWidth={2.5} />

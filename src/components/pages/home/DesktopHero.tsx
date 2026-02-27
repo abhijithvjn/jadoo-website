@@ -5,11 +5,8 @@ import Link from 'next/link';
 
 export const DesktopHero = ({ data }: { data: HeroBannerData }) => (
   <div className="hidden md:grid min-h-[600px] md:pt-12 lg:pt-10" style={{ gridTemplateColumns: '55% 45%' }}>
-    {/* ── LEFT COLUMN ── */}
     <div className="flex flex-col items-start justify-center pt-[160px] pb-16">
-      <SubCaption className="font-semibold text-primary uppercase whitespace-nowrap">
-        {data.tag}
-      </SubCaption>
+      <SubCaption className="font-semibold text-primary uppercase whitespace-nowrap">{data.tag}</SubCaption>
 
       <div className="mt-4">
         <Heading className="leading-[1.05]" style={{ maxWidth: '620px' }}>
@@ -66,7 +63,6 @@ export const DesktopHero = ({ data }: { data: HeroBannerData }) => (
       </div>
     </div>
 
-    {/* ── RIGHT COLUMN ── */}
     <div className="relative self-stretch">
       {data.images.aeroplane && (
         <div className="absolute z-10 w-[80px] md:w-[90px] lg:w-[110px] xl:w-[140px] md:top-[10%] md:left-[3%] lg:top-[14%] lg:left-[4%]">

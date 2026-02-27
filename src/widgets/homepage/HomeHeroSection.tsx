@@ -7,7 +7,6 @@ import { DesktopHero } from '@/components/pages/home/DesktopHero';
 const HomeHeroSection = ({ data }: { data: HeroBannerData }) => {
   return (
     <section className="relative w-full overflow-x-clip -mt-[140px]">
-      {/* Background Shape remains shared */}
       <div className="absolute top-0 right-0 h-[80%] w-[48%] z-0 pointer-events-none">
         <Image src={data.images.backgroundShape} alt="" fill className="object-cover object-left" priority />
       </div>
