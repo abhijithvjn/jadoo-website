@@ -6,7 +6,7 @@ import { ServiceCard } from '@/components/pages/home/ServiceCard';
 
 const ServicesGrid = ({ data }: { data: ServicesGridData }) => {
   return (
-    <section className="relative py-10 lg:py-24 overflow-visible">
+    <section className="relative py-8 lg:py-16 overflow-visible">
       <div className="absolute top-20 right-0 -z-10 w-[120px] md:w-[130px] lg:w-[150px] xl:w-[180px]">
         <Image src={data.decorations.topRightGrid} alt="" width={180} height={180} className="object-contain" />
       </div>

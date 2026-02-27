@@ -6,10 +6,10 @@ import { DestinationCard } from '@/components/pages/home/DestinationCard';
 
 const DestinationsGrid = ({ data }: { data: DestinationsGridData }) => {
   return (
-    <section className="relative py-10 lg:py-24 overflow-visible">
+    <section className="relative py-8 lg:py-16 overflow-visible">
       <Container className="relative">
         {/* Spiral Decoration - Positioned at bottom right behind cards */}
-        <div className="absolute bottom-10 -right-4 lg:-right-10 -z-10 w-[60px] md:w-[80px] lg:w-[96px]">
+        <div className="absolute bottom-10 -right-0 md:-right-6 -z-10 w-[60px] md:w-[80px] lg:w-[96px]">
           <Image src={data.decoration} alt="" width={96} height={252} className="object-contain" />
         </div>
 
