@@ -25,7 +25,6 @@ export default function WidgetRenderer({ widgets }: WidgetRendererProps) {
   return (
     <>
       {widgets.map((widget, index) => {
-        // Look up the component based on the widget_type string
         const Component = WIDGET_COMPONENTS[widget.widget_type];
 
         if (!Component) {

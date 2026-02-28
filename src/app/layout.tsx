@@ -6,7 +6,6 @@ import { HEADER_DATA } from '@/data/header.data';
 import { FOOTER_DATA } from '@/data/footer.data';
 import Footer from '@/components/layout/footer/Footer';
 
-/* Heading Font - Volkhov (Bold headings) */
 const volkhov = Volkhov({
   subsets: ['latin'],
   weight: ['400', '700'],
@@ -14,7 +13,6 @@ const volkhov = Volkhov({
   display: 'swap',
 });
 
-/* Body Font - Poppins (Captions, paragraphs) */
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],

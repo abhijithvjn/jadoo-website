@@ -29,15 +29,15 @@ const TestimonialsClient = ({ data }: { data: TestimonialsSliderData }) => {
       transition: { duration: 0.5 },
     },
     stacked: {
-      y: 60, // Offset to the bottom
-      x: 40, // Offset to the right
+      y: 60,
+      x: 40,
       opacity: 0.4,
       zIndex: 10,
       scale: 0.95,
       transition: { duration: 0.5 },
     },
     exit: {
-      y: -100, // Slides up and out
+      y: -100,
       opacity: 0,
       zIndex: 0,
       transition: { duration: 0.3 },
