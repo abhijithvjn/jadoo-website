@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import { HeroBannerData } from '@/types/types';
-import { Heading, Paragraph, SubCaption, SubParagraph } from '@/components/ui/typography';
+import { Heading, Paragraph, SubParagraph } from '@/components/ui/typography';
 import Link from 'next/link';
 
 export const DesktopHero = ({ data }: { data: HeroBannerData }) => (
   <div className="hidden md:grid min-h-[600px] md:pt-12 lg:pt-10" style={{ gridTemplateColumns: '55% 45%' }}>
     <div className="flex flex-col items-start justify-center pt-[160px] pb-16">
-      <SubCaption className="font-semibold text-primary uppercase whitespace-nowrap">{data.tag}</SubCaption>
+      <Paragraph className="font-semibold text-primary uppercase whitespace-nowrap">{data.tag}</Paragraph>
 
       <div className="mt-4">
         <Heading className="leading-[1.05]" style={{ maxWidth: '620px' }}>

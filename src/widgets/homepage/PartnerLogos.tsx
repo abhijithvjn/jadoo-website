@@ -19,7 +19,7 @@ const PartnerLogos = ({ data }: PartnerLogosProps) => {
   const { logos } = data;
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-8 bg-white">
       <Container>
         <div className="flex flex-wrap items-center justify-center md:justify-between gap-8 md:gap-4">
           {logos.map((logo) => (

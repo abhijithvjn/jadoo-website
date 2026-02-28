@@ -33,7 +33,7 @@
     --text-sub-heading-size: 42px;
     --text-main-caption-size: 28px;
     --text-caption-size: 18px;
-    --text-sub-caption-size: 16px;
+    --text-sub-caption-size: 20px;
     --text-paragraph-size: 16px;
     --text-sub-paragraph-size: 14px;
   }
@@ -84,6 +84,7 @@
 /* ================= BASE / GLOBAL STYLES ================= */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {

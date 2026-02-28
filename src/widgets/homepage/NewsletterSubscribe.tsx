@@ -85,14 +85,8 @@ const NewsletterSubscribe = ({ data }: NewsletterSubscribeProps) => {
             </form>
 
             <div className="absolute -top-4 -right-4 md:-top-2 md:-right-4 z-30 transform hover:scale-110 transition-transform">
-              <div className="relative w-12 h-12 lg:w-16 lg:h-16 flex  bg-gradient-to-tr from-[#5E6282] to-[#747DEF] rounded-full shadow-xl">
-                <Image
-                  src={decorations.sendIconTopRight}
-                  alt="Send"
-                  width={44}
-                  height={40}
-                  className="object-contain translate-x-1"
-                />
+              <div className="relative w-10 h-10 flex  bg-gradient-to-tr from-[#5E6282] to-[#747DEF] rounded-full shadow-xl">
+                <Image src={decorations.sendIconTopRight} alt="Send" width={44} height={40} className="object-contain" />
               </div>
             </div>
           </div>

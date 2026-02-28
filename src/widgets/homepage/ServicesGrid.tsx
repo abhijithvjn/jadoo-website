@@ -1,7 +1,7 @@
 import Container from '@/components/common/Container';
 import Image from 'next/image';
 import { ServicesGridData } from '@/types/types';
-import { SubCaption, SubHeading } from '@/components/ui/typography';
+import { Paragraph, SubHeading } from '@/components/ui/typography';
 import { ServiceCard } from '@/components/pages/home/ServiceCard';
 
 const ServicesGrid = ({ data }: { data: ServicesGridData }) => {
@@ -13,7 +13,7 @@ const ServicesGrid = ({ data }: { data: ServicesGridData }) => {
 
       <Container className="relative">
         <div className="flex flex-col items-center text-center mb-16 md:mb-8">
-          <SubCaption className="font-semibold text-muted uppercase tracking-widest">{data.category_tag}</SubCaption>
+          <Paragraph className="font-semibold text-muted uppercase tracking-widest">{data.category_tag}</Paragraph>
           <SubHeading className="mt-2 text-accent capitalize">{data.title}</SubHeading>
         </div>
 

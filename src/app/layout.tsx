@@ -3,6 +3,8 @@ import { Poppins, Volkhov, Google_Sans_Flex } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/header/Header';
 import { HEADER_DATA } from '@/data/header.data';
+import { FOOTER_DATA } from '@/data/footer.data';
+import Footer from '@/components/layout/footer/Footer';
 
 /* Heading Font - Volkhov (Bold headings) */
 const volkhov = Volkhov({
@@ -40,6 +42,7 @@ export default function RootLayout({
       <body className="antialiased bg-background text-foreground font-body overflow-x-hidden">
         <Header data={HEADER_DATA} />
         {children}
+        <Footer data={FOOTER_DATA} />
       </body>
     </html>
   );

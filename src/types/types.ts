@@ -45,6 +45,47 @@ export interface HeaderProps {
   data: HeaderData;
 }
 
+// --- Footer Specific Interfaces ---
+
+export interface FooterLink {
+  label: string;
+  link: string;
+}
+
+export interface FooterColumn {
+  title: string;
+  links: FooterLink[];
+}
+
+export interface SocialMedia {
+  platform: string;
+  icon: string;
+  isGradient?: boolean;
+}
+
+export interface AppPrompts {
+  text: string;
+  googlePlay: string;
+  appleStore: string;
+}
+
+export interface FooterData {
+  brand: {
+    name: string;
+    tagline: string;
+  };
+  columns: FooterColumn[];
+  socials: SocialMedia[];
+  appPrompts: AppPrompts;
+  copyright: string;
+}
+
+// --- Component Prop Type ---
+
+export interface FooterProps {
+  data: FooterData;
+}
+
 // --- Base Shared Types ---
 export interface Button {
   label: string;

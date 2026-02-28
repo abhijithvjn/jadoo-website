@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Container from '@/components/common/Container';
 import TestimonialCard from '@/components/pages/home/TestimonialCard';
-import { SubCaption, SubHeading } from '@/components/ui/typography';
+import { Paragraph, SubHeading } from '@/components/ui/typography';
 import { TestimonialsSliderData } from '@/types/types';
 import { ChevronUp, ChevronDown } from 'lucide-react';
 
@@ -48,7 +48,7 @@ const TestimonialsClient = ({ data }: { data: TestimonialsSliderData }) => {
     <Container className="grid grid-cols-1 md:grid-cols-[0.8fr_1fr] gap-20">
       <div className="flex flex-col gap-8">
         <div>
-          <SubCaption className="text-muted font-semibold uppercase tracking-widest">{data.tag}</SubCaption>
+          <Paragraph className="text-muted font-semibold uppercase tracking-widest">{data.tag}</Paragraph>
           <AnimatePresence mode="wait">
             <motion.div
               key={activeIndex}

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Paragraph, SubCaption, SubParagraph } from '@/components/ui/typography';
+import { Paragraph, SubParagraph } from '@/components/ui/typography';
 import { BookingStepsData } from '@/types/types';
 
 export const FloatingBookingCard = ({ card }: { card: BookingStepsData['bookingCard'] }) => (
@@ -10,7 +10,7 @@ export const FloatingBookingCard = ({ card }: { card: BookingStepsData['bookingC
       </div>
 
       <div className="flex flex-col gap-3 px-1">
-        <SubCaption className="font-medium tracking-tight text-foreground">{card.title}</SubCaption>
+        <Paragraph className="font-medium tracking-tight text-foreground">{card.title}</Paragraph>
         <SubParagraph className="flex items-center gap-2 text-muted font-medium">
           <span>{card.dateRange}</span>
           <span className="h-4 w-[1px] bg-muted" />

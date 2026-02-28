@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { SubCaption, Paragraph } from '@/components/ui/typography';
+import { Paragraph } from '@/components/ui/typography';
 import { cn } from '@/lib/utils/utils';
 
 interface ServiceCardProps {
@@ -34,7 +34,7 @@ export const ServiceCard = ({ service, redAccentShape }: ServiceCardProps) => (
         <Image src={service.icon} alt={service.title} width={80} height={80} className="object-contain z-10" />
       </div>
 
-      <SubCaption className="font-semibold text-accent mb-4">{service.title}</SubCaption>
+      <Paragraph className="font-semibold text-accent mb-4">{service.title}</Paragraph>
 
       <Paragraph className="text-muted leading-relaxed text-[15px] max-w-[170px]">{service.description}</Paragraph>
     </div>

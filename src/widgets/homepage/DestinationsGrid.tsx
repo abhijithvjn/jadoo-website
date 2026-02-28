@@ -1,7 +1,7 @@
 import Container from '@/components/common/Container';
 import Image from 'next/image';
 import { DestinationsGridData } from '@/types/types';
-import { SubCaption, SubHeading } from '@/components/ui/typography';
+import { Paragraph, SubHeading } from '@/components/ui/typography';
 import { DestinationCard } from '@/components/pages/home/DestinationCard';
 
 const DestinationsGrid = ({ data }: { data: DestinationsGridData }) => {
@@ -13,7 +13,7 @@ const DestinationsGrid = ({ data }: { data: DestinationsGridData }) => {
         </div>
 
         <div className="flex flex-col items-center text-center mb-16">
-          <SubCaption className="font-semibold text-muted">{data.tag}</SubCaption>
+          <Paragraph className="font-semibold text-muted">{data.tag}</Paragraph>
           <SubHeading className="mt-2 text-accent capitalize">{data.title}</SubHeading>
         </div>
 

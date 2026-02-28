@@ -1,7 +1,7 @@
 import Container from '@/components/common/Container';
 import { FloatingBookingCard } from '@/components/pages/home/FloatingBookingCard';
 import { StepItem } from '@/components/pages/home/StepItem';
-import { SubCaption, SubHeading } from '@/components/ui/typography';
+import { Paragraph, SubHeading } from '@/components/ui/typography';
 import { BookingStepsData } from '@/types/types';
 
 const BookingSteps = ({ data }: { data: BookingStepsData }) => {
@@ -10,7 +10,7 @@ const BookingSteps = ({ data }: { data: BookingStepsData }) => {
       <Container className="grid grid-cols-1 md:grid-cols-2 items-center gap-20 lg:gap-10">
         <div className="flex flex-col gap-8">
           <div>
-            <SubCaption className="text-muted font-semibold">{data.tag}</SubCaption>
+            <Paragraph className="text-muted font-semibold">{data.tag}</Paragraph>
             <SubHeading className="mt-3 max-w-[510px] text-accent font-bold leading-[1.2]">{data.title}</SubHeading>
           </div>
 

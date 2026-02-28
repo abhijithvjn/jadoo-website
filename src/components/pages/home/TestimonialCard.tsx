@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Caption, Paragraph, SubCaption } from '@/components/ui/typography';
+import { Caption, Paragraph } from '@/components/ui/typography';
 
 interface TestimonialCardProps {
   quote: string;

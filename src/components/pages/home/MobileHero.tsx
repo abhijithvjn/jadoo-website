@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import { HeroBannerData } from '@/types/types';
-import { Heading, Paragraph, SubCaption, SubParagraph } from '@/components/ui/typography';
+import { Heading, Paragraph, SubParagraph } from '@/components/ui/typography';
 import Link from 'next/link';
 
 export const MobileHero = ({ data }: { data: HeroBannerData }) => (
   <div className="md:hidden">
     <div className="pt-[120px] pb-8 sm:pt-[140px]">
       <div className="flex flex-col items-start">
-        <SubCaption className="font-semibold text-primary uppercase">{data.tag}</SubCaption>
+        <Paragraph className="font-semibold text-primary uppercase">{data.tag}</Paragraph>
 
         <div className="mt-3">
           <Heading className="leading-[1.05]">
